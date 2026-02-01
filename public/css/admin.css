@@ -1,0 +1,205 @@
+/* Admin Dark Premium Theme - Shopkip */
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px !important;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: var(--text-light);
+    letter-spacing: -1px;
+}
+
+/* Cards & Sections */
+.card {
+    background-color: var(--dark-card);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    background-color: #252525;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 0 0 2px rgba(241, 196, 15, 0.1);
+}
+
+small {
+    display: block;
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Product Dashboard Items */
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    transition: background 0.3s;
+}
+
+.product-item:hover {
+    background: #252525;
+}
+
+.product-image-container {
+    flex-shrink: 0;
+}
+
+.product-image {
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.info strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info .desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.info .price {
+    color: var(--primary-yellow);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Tables (Orders) */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 1px solid #222;
+}
+
+/* Badges */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-en_attente {
+    background: rgba(241, 196, 15, 0.1);
+    color: var(--primary-yellow);
+}
+
+.status-termine {
+    background: rgba(39, 174, 96, 0.1);
+    color: #2ecc71;
+}
+
+/* Buttons Overrides */
+.btn-edit,
+.btn-delete {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-edit {
+    background: #3498db;
+}
+
+.btn-delete {
+    background: var(--accent-red);
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        margin: 0;
+    }
+}

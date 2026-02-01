@@ -1,0 +1,118 @@
+/* Dark Premium Theme - My Account */
+:root {
+    --primary-yellow: #f1c40f;
+    --dark-bg: #0d0d0d;
+    --dark-card: #1a1a1a;
+    --text-light: #ffffff;
+    --text-muted: #a0a0a0;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+.account-container {
+    max-width: 1000px;
+    margin: 80px auto 50px;
+    padding: 0 20px;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .account-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.account-card {
+    background: var(--dark-card);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.account-card h2 {
+    margin-bottom: 30px;
+    color: var(--text-light);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    background: #252525;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-yellow);
+}
+
+.btn-update {
+    background-color: var(--primary-yellow);
+    color: black;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-update:hover {
+    background-color: #d4ac0d;
+    transform: translateY(-2px);
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.alert-error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}

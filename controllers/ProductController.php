@@ -19,6 +19,6 @@ class ProductController extends Controller
              $this->redirect('index.php');
         }
 
-        $this->render('details', ['produit' => $produit]);
+        $this->render('product/details', ['produit' => $produit]);
     }
 }

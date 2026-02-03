@@ -69,12 +69,12 @@
                     
                     <div class="methodes-paiement" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
                         <label class="methode-option" style="background: #252525; border: 1px solid #333; padding: 20px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 15px;">
-                            <input type="radio" name="methode_paiement" value="livraison" required checked>
+                            <input type="radio" name="methode_paiement" value="Livraison" required checked>
                             <strong>Paiement à la livraison</strong>
                         </label>
                         
                         <label class="methode-option" style="background: #252525; border: 1px solid #333; padding: 20px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 15px;">
-                            <input type="radio" name="methode_paiement" value="Tmoney_Flooz" required>
+                            <input type="radio" name="methode_paiement" value="T-money/Flooz" required>
                             <strong>T-money / Flooz</strong>
                         </label>
                     </div>
